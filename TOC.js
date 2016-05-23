@@ -16,7 +16,7 @@
 // Modified by Aneesh 
 // www.bloggerplugins.org
 // تعريب مدونة كن داعيا للخير 
-// http://conda3ianllkhir.blogspot.com/
+// http://www.condaianllkhir.com/
 // Date : 02-08-2011
 // global arrays
 
