@@ -1,0 +1,22 @@
+
+function bookmarksite(title,url){
+if (window.sidebar) // firefox
+	window.sidebar.addPanel(title, url, "");
+else if(window.opera && window.print){ // opera
+	var elem = document.createElement('a');
+	elem.setAttribute('href',url);
+	elem.setAttribute('title',title);
+	elem.setAttribute('rel','sidebar');
+	elem.click();
+} 
+else if(document.all)// ie
+	window.external.AddFavorite(url, title);
+}
+
+function mailpage()
+{
+  mail_str = "mailto:?subject= Webpage: " + document.title;
+  mail_str += "&body= I wanted to send you this webpage " + document.title;
+  mail_str += ". You should check this out at, " + location.href; 
+  location.href = mail_str;
+}
